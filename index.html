@@ -15,12 +15,11 @@
     </div>
     <section class="tab-section">
         <div class="tab-container home-tab">
-            <div class="tab-handle">
-                    <div class="red"></div>
-                    <div class="yellow"></div>
-                    <div class="green"></div>
-                
-            </div>
+                <div class="handle-dots-container">
+                        <div class="red"></div>
+                        <div class="yellow"></div>
+                        <div class="green"></div>
+                    </div>
             <div class="tab-contents">
                 <div class="skills-folder">
                     <div class="folder">
@@ -54,14 +53,38 @@
             
         </div>
         </div>
-        <div class="tab-container skills-tab">
+        <div class="tab-container skills-tab" style="display: none">
                 <div class="tab-handle">
-                        <div class="red"></div>
-                        <div class="yellow"></div>
-                        <div class="green"></div>
+                    <div class="handle-dots-container">
+                            <div class="red" id="skills-tab-red"></div>
+                            <div class="yellow"></div>
+                            <div class="green"></div></div>
+                            <div class="skills-title">skills</div>
+                        
                     
                 </div>
-                <div class="tab-contents"></div>
+                <div class="tab-contents">
+                    <div class="html-icon folder">
+                        <img src="public/assets/icons8-html-5-100.png">
+                        <div class="folder-text">html</div>
+                    </div>
+                    <div class="css-icon folder">
+                            <img src="public/assets/icons8-css3-100.png">
+                            <div class="folder-text">css</div>
+                        </div>
+                        <div class="js-icon folder">
+                                <img src="public/assets/icons8-javascript-100.png">
+                                <div class="folder-text">javascript</div>
+                            </div>
+                            <div class="node-icon folder">
+                                    <img src="public/assets/icons8-nodejs-100.png">
+                                    <div class="folder-text">node.js</div>
+                                </div>
+                            <div class="postgresql-icon folder">
+                                    <img src="public/assets/icons8-postgresql-100.png">
+                                    <div class="folder-text">postgresql</div>
+                                </div>
+                </div>
         </div>
     </section>
     
@@ -71,13 +94,14 @@
         </div>
         <footer class="footer-container">
             <div class=icon-container>
-                <a href="https://github.com/seabasshoang"><img src="./assets/icons8-octocat-96.png" alt="github link"></a>
-                <a href=""><img src="./assets/icons8-linkedin-96.png" alt="linkedin link"></a>
-                <img src="./assets/icons8-important-mail-96.png" alt="email icon" class="email-icon">
-                <img src="./assets/icons8-calendar-14-80.png" style="width: 70px; margin: 10px" alt="calendar" class="calendar-icon">
+                <a href="https://github.com/seabasshoang"><img src="public/assets/icons8-octocat-96.png" alt="github link"></a>
+                <a href=""><img src="public/assets/icons8-linkedin-96.png" alt="linkedin link"></a>
+                <img src="public/assets/icons8-important-mail-96.png" alt="email icon" class="email-icon">
+                <img src="public/assets/icons8-calendar-14-80.png" style="width: 70px; margin: 10px" alt="calendar" class="calendar-icon">
                 <span class="trash-icon">&#x1f5d1;</span>
             </div>
             <div class="footer-bg"></div>
         </footer>
+        <script src="index.js"></script>
 </body>
 </html>

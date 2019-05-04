@@ -28,8 +28,9 @@ h2 {
 
 .tab-section {
     margin: auto;
-    width: 100vw;
-    padding: 30px;
+    height:50vh;    
+    display: flex;
+    justify-content: center;
 }
 
 .home-tab {
@@ -54,10 +55,16 @@ h2 {
 }
 
 .tab-handle {
+
+}
+
+.handle-dots-container {
     height: 30px;
+    width: 90vw;
     border-bottom: solid 0.2px black;
     display: flex;
     align-items: center;
+    position: absolute;
 }
 
 .red {
@@ -87,7 +94,9 @@ h2 {
 .tab-contents {
     display: flex;
     flex-wrap: wrap;
-    margin: 25px;
+    margin: 30px 25px 0 25px;
+    overflow: scroll;
+    height: 55.5vh;
 }
 
 .folder {
@@ -197,6 +206,14 @@ h2 {
     border-radius: 10px 10px 0 0;
     position: absolute;
 }
+
+.skills-title {
+    margin: 0;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 /* --------------------------desktop styling-------------------------- */
 
 @media only screen and (min-width: 830px) {
@@ -221,13 +238,24 @@ h2 {
         font-size: 3rem;
     }
 
+    .tab-section {
+        display: block;
+    }
+
     .tab-container {
         width: 500px;
-        min-height: 350px;
+        min-height: 300px;
         border: solid 0.5px black;
         border-radius: 5px;
         margin: 10vh 10vw;
         position: absolute;
+    }
+
+    .tab-contents {
+        height: 40vh;
+    }
+    .handle-dots-container {
+        width: 500px;
     }
 
     .footer-bg {
@@ -240,5 +268,10 @@ h2 {
         position: absolute;
         bottom: 0;
         z-index: 1;
+    }
+
+    .folder {
+
+    height: 100px;
     }
 }

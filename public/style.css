@@ -7,6 +7,8 @@ body {
     background-image: url('./assets/mountain.jpg');
 }
 
+
+
 .text-container {
     bottom: 0;
     padding: 15px;   
@@ -29,8 +31,8 @@ h2 {
 .tab-section {
     margin: auto;
     height:50vh;    
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
 }
 
 .home-tab {
@@ -51,6 +53,7 @@ h2 {
     min-height: 60vh;
     border: solid 0.5px black;
     border-radius: 5px;
+    position: absolute;
        
 }
 
@@ -217,7 +220,7 @@ h2 {
 /* --------------------------desktop styling-------------------------- */
 
 @media only screen and (min-width: 830px) {
-    .text-container {
+     .text-container {
         position: absolute;
         right: 0;
         bottom:90px;
@@ -238,17 +241,9 @@ h2 {
         font-size: 3rem;
     }
 
-    .tab-section {
-        display: block;
-    }
-
     .tab-container {
         width: 500px;
-        min-height: 300px;
-        border: solid 0.5px black;
-        border-radius: 5px;
-        margin: 10vh 10vw;
-        position: absolute;
+        min-height: unset;
     }
 
     .tab-contents {
@@ -271,7 +266,6 @@ h2 {
     }
 
     .folder {
-
     height: 100px;
-    }
+    } 
 }

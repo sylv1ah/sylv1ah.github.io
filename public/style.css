@@ -31,8 +31,9 @@ h2 {
 .tab-section {
     margin: auto;
     height:50vh;    
-    /* display: flex;
-    justify-content: center; */
+    display: flex;
+    justify-content: center;
+    position: sticky;
 }
 
 .home-tab {
@@ -239,6 +240,13 @@ h2 {
     
     h2 {
         font-size: 3rem;
+    }
+
+    .tab-section {
+        height: 50vh;
+    display: inline-block;
+    top: 20vh;
+    left: 10vw;
     }
 
     .tab-container {

@@ -1,10 +1,20 @@
+
+    html { 
+        background: url('./assets/mountain2.jpg') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+
+
 body {
     height: 100vh;
     width: 100vw;
     font-family: 'Roboto', sans-serif;
     margin:0px;
     position: relative;
-    background-image: url('./assets/mountain.jpg');
+    /* background-image: url('./assets/mountain2.jpg') center; */
 }
 
 
@@ -17,6 +27,7 @@ body {
 h1 , h2{
     text-align: right;
     font-weight: normal;
+    color: white;
 }
 
 h1 {
@@ -42,7 +53,12 @@ h2 {
     margin:0;
 }
 
-.skills-tab {
+.skills-tab, 
+.projects-tab, 
+.experience-tab, 
+.client-projects-tab,
+.team-projects-tab,
+.personal-projects-tab {
     position: absolute;
     z-index: 1;
     background-color: rgba(255, 255, 255, 0.79);
@@ -100,7 +116,7 @@ h2 {
     flex-wrap: wrap;
     margin: 30px 25px 0 25px;
     overflow: scroll;
-    height: 55.5vh;
+    height: 54.5vh;
 }
 
 .folder {
@@ -156,6 +172,7 @@ h2 {
     border-top: solid 0.2px black;
     border-left: solid 0.2px black;
     position: absolute;
+    background-color: white;
 }
 
 .file-corner {
@@ -173,6 +190,7 @@ h2 {
     border-bottom: solid 0.2px black;
     border-left: solid 0.2px black;
     margin-bottom: 5px;
+    background-color: white;
 }
 
 .file-text {
@@ -211,10 +229,10 @@ h2 {
     position: absolute;
 }
 
-.skills-title {
+.tab-title {
     margin: 0;
     position: absolute;
-    top: 3%;
+    top: 4%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -256,6 +274,15 @@ h2 {
 
     .tab-contents {
         height: 40vh;
+    }
+    
+    .skills-tab, .projects-tab, .experience-tab {    
+        top: 50px;
+        left: 30px;
+    }
+    .client-projects-tab, .team-projects-tab, .personal-projects-tab {    
+        top: 100px;
+        left: 60px;
     }
     .handle-dots-container {
         width: 500px;

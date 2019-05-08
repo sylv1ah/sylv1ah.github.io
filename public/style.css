@@ -1,12 +1,11 @@
 
-    html { 
+html { 
         background: url('./assets/mountain2.jpg') no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-      }
-
+}
 
 body {
     height: 100vh;
@@ -14,10 +13,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin:0px;
     position: relative;
-    /* background-image: url('./assets/mountain2.jpg') center; */
 }
-
-
 
 .text-container {
     bottom: 0;
@@ -72,10 +68,6 @@ h2 {
     border-radius: 5px;
     position: absolute;
        
-}
-
-.tab-handle {
-
 }
 
 .handle-dots-container {
@@ -139,6 +131,27 @@ h2 {
     border-radius: 0 5px 5px 5px;
     background-color: #EDD18A;
     margin-bottom: 5px;
+    position: relative;
+}
+
+.folder-bod-open {
+    width: 98px;
+    height: 63px;
+    transform: skew(-7deg);
+    background-color: #EDD18A;
+    position: unset;
+    border-radius: 5px 5px 5px 0;
+    margin-left: 8px;
+    margin-top: 7px;
+}
+
+.folder-bod-open-back {
+    width: 100px;
+    height: 70px;
+    border-radius: 0 5px 5px 5px;
+    background-color: rgb(207, 183, 121);
+    margin-bottom: 5px;
+    position: absolute;
 }
 
 .folder-text {
@@ -157,8 +170,6 @@ h2 {
 .email-icon {
     width: 80px;
 }
-
-
 
 .file {
     margin: 20px 35px 20px 35px;
@@ -301,6 +312,10 @@ h2 {
     }
 
     .folder {
-    height: 100px;
+    height: 100px;  
     } 
+
+    .folder-text {
+    margin-top: -25px;
+    }
 }

@@ -17,82 +17,113 @@ const personalProjectsFolder = document.querySelector('.personal-projects-folder
 const personalProjectsRed = document.querySelector('#personal-projects-tab-red');
 const personalProjectsTab = document.querySelector('.personal-projects-tab');
 
+const skillsFolderClose = document.querySelector('.skills-folder-close');
+const skillsFolderOpen = document.querySelector('.skills-folder-open');
+const projectsFolderClose = document.querySelector('.projects-folder-close');
+const projectsFolderOpen = document.querySelector('.projects-folder-open');
+const experienceFolderClose = document.querySelector('.experience-folder-close');
+const experienceFolderOpen = document.querySelector('.experience-folder-open');
+const clientProjectsFolderClose = document.querySelector('.client-projects-folder-close');
+const clientProjectsFolderOpen = document.querySelector('.client-projects-folder-open');
+const teamProjectsFolderClose = document.querySelector('.team-projects-folder-close');
+const teamProjectsFolderOpen = document.querySelector('.team-projects-folder-open');
+const personalProjectsFolderClose = document.querySelector('.personal-projects-folder-close');
+const personalProjectsFolderOpen = document.querySelector('.personal-projects-folder-open');
+
 skillsFolder.addEventListener("click", () => {
     console.log("skills folder clicked")
     if(skillsTab.style.display === "none")
         skillsTab.style.display = "block";
-        
+        skillsFolderClose.style.display = "none";
+        skillsFolderOpen.style.display = "block";
 });
 
 skillsRed.addEventListener("click", () => {
     console.log("skills red button clicked")
     if(skillsTab.style.display === "block")
         skillsTab.style.display = "none";
+        skillsFolderClose.style.display = "block";
+        skillsFolderOpen.style.display = "none";
 });
 
 projectsFolder.addEventListener("click", () => {
     console.log("projects folder clicked")
     if(projectsTab.style.display === "none")
         projectsTab.style.display = "block";
-        
+        projectsFolderClose.style.display = "none";
+        projectsFolderOpen.style.display = "block";
 });
 
 projectsRed.addEventListener("click", () => {
     console.log("projects red button clicked")
     if(projectsTab.style.display === "block")
         projectsTab.style.display = "none";
+        projectsFolderClose.style.display = "block";
+        projectsFolderOpen.style.display = "none";
 });
 
 experienceFolder.addEventListener("click", () => {
     console.log("experience folder clicked")
     if(experienceTab.style.display === "none")
         experienceTab.style.display = "block";
-        
+        experienceFolderClose.style.display = "none";
+        experienceFolderOpen.style.display = "block";
 });
 
 experienceRed.addEventListener("click", () => {
     console.log("experience red button clicked")
     if(experienceTab.style.display === "block")
         experienceTab.style.display = "none";
+        experienceFolderClose.style.display = "block";
+        experienceFolderOpen.style.display = "none";
 });
 
 clientProjectsFolder.addEventListener("click", () => {
     console.log("clientProjects folder clicked")
     if(clientProjectsTab.style.display === "none")
         clientProjectsTab.style.display = "block";
-        
+        clientProjectsFolderClose.style.display = "none";
+        clientProjectsFolderOpen.style.display = "block";
 });
 
 clientProjectsRed.addEventListener("click", () => {
     console.log("clientProjects red button clicked")
     if(clientProjectsTab.style.display === "block")
         clientProjectsTab.style.display = "none";
+        clientProjectsFolderClose.style.display = "block";
+        clientProjectsFolderOpen.style.display = "none";
 });
 
 teamProjectsFolder.addEventListener("click", () => {
     console.log("teamProjects folder clicked")
     if(teamProjectsTab.style.display === "none")
         teamProjectsTab.style.display = "block";
-        
+        teamProjectsFolderClose.style.display = "none";
+        teamProjectsFolderOpen.style.display = "block";
 });
 
 teamProjectsRed.addEventListener("click", () => {
     console.log("teamProjects red button clicked")
     if(teamProjectsTab.style.display === "block")
         teamProjectsTab.style.display = "none";
+        teamProjectsFolderClose.style.display = "block";
+        teamProjectsFolderOpen.style.display = "none";
 });
 
 personalProjectsFolder.addEventListener("click", () => {
     console.log("personalProjects folder clicked")
     if(personalProjectsTab.style.display === "none")
         personalProjectsTab.style.display = "block";
-        
+        personalProjectsFolderClose.style.display = "none";
+        personalProjectsFolderOpen.style.display = "block";
 });
 
 personalProjectsRed.addEventListener("click", () => {
     console.log("personalProjects red button clicked")
     if(personalProjectsTab.style.display === "block")
         personalProjectsTab.style.display = "none";
+        personalProjectsFolderClose.style.display = "block";
+        personalProjectsFolderOpen.style.display = "none";
 });
 function dragElement(elmnt) {
     var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;

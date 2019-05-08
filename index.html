@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,700,900i" rel="stylesheet">
     <title>Sylvia Hoang</title>
 </head>
+
 <body>
     <div class="text-container">
         <h1>&#x1f44b;&#x1f3fb; Hi, I'm Sylvia!</h1>
@@ -15,179 +17,233 @@
     </div>
     <section class="tab-section">
         <div id="mydiv" class="tab-container home-tab">
-                <div  id="mydivheader" class="handle-dots-container">
-                        <div class="red"></div>
-                        <div class="yellow"></div>
-                        <div class="green"></div>
-                    </div>
+            <div id="mydivheader" class="handle-dots-container">
+                <div class="red"></div>
+                <div class="yellow"></div>
+                <div class="green"></div>
+            </div>
             <div class="tab-contents">
                 <div class="skills-folder">
-                    <div class="folder">
+                    <div class="folder skills-folder-close">
                         <div class="folder-top"></div>
                         <div class="folder-bod"></div>
-                        <div class="folder-text">skills</div>
                     </div>
+                    <div class="folder folder-open skills-folder-open" style="display: none">
+                        <div class="folder-top"></div>
+                        <div class="folder-bod-open-back"></div>
+                        <div class="folder-bod-open"></div>
+                    </div>
+                    <div class="folder-text">skills</div>
                 </div>
-                    <div class="projects-folder">
-                        <div class="folder">
-                            <div class="folder-top"></div>
-                            <div class="folder-bod"></div>
-                            <div class="folder-text">projects</div>
-                        </div>
+                <div class="projects-folder">
+                    <div class="folder projects-folder-close">
+                        <div class="folder-top"></div>
+                        <div class="folder-bod"></div>
                     </div>
-                    <div class="experience-folder">
-                        <div class="folder">
-                            <div class="folder-top"></div>
-                            <div class="folder-bod"></div>
-                            <div class="folder-text">experience</div>
-                        </div>
+                    <div class="folder folder-open projects-folder-open" style="display: none">
+                        <div class="folder-top"></div>
+                        <div class="folder-bod-open-back"></div>
+                        <div class="folder-bod-open"></div>
                     </div>
-                    <div class="cv-file">
-                        <div class="file">
-                                <div class="file-left"></div>
-                            <div class="file-corner"></div>
-                            <div class="file-bod"></div>
-                            <div class="file-text">cv.pdf</div>
-                        </div>
-                    </div>
-            
-        </div>
-        </div>
-        <div  class="tab-container skills-tab" style="display: none">
-                <div class="tab-handle">
-                    <div class="handle-dots-container">
-                            <div class="red" id="skills-tab-red"></div>
-                            <div class="yellow"></div>
-                            <div class="green"></div></div>
-                            <div class="tab-title">skills</div>
-                        
-                    
+                    <div class="folder-text">projects</div>
                 </div>
-                <div class="tab-contents">
+                <div class="experience-folder">
+                    <div class="folder experience-folder-close">
+                        <div class="folder-top"></div>
+                        <div class="folder-bod"></div>
+                    </div>
+                    <div class="folder folder-open experience-folder-open" style="display: none">
+                            <div class="folder-top"></div>
+                            <div class="folder-bod-open-back"></div>
+                            <div class="folder-bod-open"></div>
+                        </div>
+                    <div class="folder-text">experience</div>
+                </div>
+                <div class="cv-file">
+                    <div class="file">
+                        <div class="file-left"></div>
+                        <div class="file-corner"></div>
+                        <div class="file-bod"></div>
+                    </div>
+                    <div class="file-text">cv.pdf</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="tab-container skills-tab" style="display: none">
+            <div class="tab-handle">
+                <div class="handle-dots-container">
+                    <div class="red" id="skills-tab-red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
+                </div>
+                <div class="tab-title">skills</div>
+
+
+            </div>
+            <div class="tab-contents">
+                <div>
                     <div class="html-icon folder">
                         <img src="public/assets/icons8-html-5-100.png">
-                        <div class="folder-text">html</div>
                     </div>
+                    <div class="folder-text">html</div>
+                </div>
+                <div>
                     <div class="css-icon folder">
-                            <img src="public/assets/icons8-css3-100.png">
-                            <div class="folder-text">css</div>
+                        <img src="public/assets/icons8-css3-100.png">
+
+                    </div>
+                    <div class="folder-text">css</div>
+                </div>
+                <div>
+                    <div class="js-icon folder">
+                        <img src="public/assets/icons8-javascript-100.png">
+                    </div>
+                    <div class="folder-text">javascript</div>
+
+                </div>
+                <div>
+                    <div class="node-icon folder">
+                        <img src="public/assets/icons8-nodejs-100.png">
+                    </div>
+                    <div class="folder-text">node.js</div>
+
+                </div>
+                <div>
+                    <div class="postgresql-icon folder">
+                        <img src="public/assets/icons8-postgresql-100.png">
+                    </div>
+                    <div class="folder-text">postgresql</div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="tab-container projects-tab" style="display: none">
+            <div class="tab-handle">
+                <div class="handle-dots-container">
+                    <div class="red" id="projects-tab-red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
+                </div>
+                <div class="tab-title">projects</div>
+
+
+            </div>
+            <div class="tab-contents">
+                <div class="client-projects-folder">
+                    <div class="folder client-projects-folder-close">
+                        <div class="folder-top"></div>
+                        <div class="folder-bod"></div>
+                    </div>
+                    <div class="folder folder-open client-projects-folder-open" style="display: none">
+                            <div class="folder-top"></div>
+                            <div class="folder-bod-open-back"></div>
+                            <div class="folder-bod-open"></div>
                         </div>
-                        <div class="js-icon folder">
-                                <img src="public/assets/icons8-javascript-100.png">
-                                <div class="folder-text">javascript</div>
-                            </div>
-                            <div class="node-icon folder">
-                                    <img src="public/assets/icons8-nodejs-100.png">
-                                    <div class="folder-text">node.js</div>
-                                </div>
-                            <div class="postgresql-icon folder">
-                                    <img src="public/assets/icons8-postgresql-100.png">
-                                    <div class="folder-text">postgresql</div>
-                                </div>
+                    <div class="folder-text">client-projects</div>
                 </div>
+                <div class="team-projects-folder">
+                    <div class="folder team-projects-folder-close">
+                        <div class="folder-top"></div>
+                        <div class="folder-bod"></div>
+                    </div>
+                    <div class="folder folder-open team-projects-folder-open" style="display: none">
+                            <div class="folder-top"></div>
+                            <div class="folder-bod-open-back"></div>
+                            <div class="folder-bod-open"></div>
+                        </div>
+                    <div class="folder-text">team projects</div>
+                </div>
+                <div class="personal-projects-folder">
+                    <div class="folder personal-projects-folder-close">
+                        <div class="folder-top"></div>
+                        <div class="folder-bod"></div>
+                    </div>
+                    <div class="folder folder-open personal-projects-folder-open" style="display: none">
+                            <div class="folder-top"></div>
+                            <div class="folder-bod-open-back"></div>
+                            <div class="folder-bod-open"></div>
+                        </div>
+                    <div class="folder-text">personal projects</div>    
+                </div>
+            </div>
         </div>
-        <div  class="tab-container projects-tab" style="display: none">
-                <div class="tab-handle">
-                    <div class="handle-dots-container">
-                            <div class="red" id="projects-tab-red"></div>
-                            <div class="yellow"></div>
-                            <div class="green"></div></div>
-                            <div class="tab-title">projects</div>
-                        
-                    
+        <div class="tab-container client-projects-tab" style="display: none">
+            <div class="tab-handle">
+                <div class="handle-dots-container">
+                    <div class="red" id="client-projects-tab-red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
                 </div>
-                <div class="tab-contents">
-                        <div class="client-projects-folder">
-                                <div class="folder">
-                                    <div class="folder-top"></div>
-                                    <div class="folder-bod"></div>
-                                    <div class="folder-text">client-projects</div>
-                                </div>
-                            </div>
-                        <div class="team-projects-folder">
-                                <div class="folder">
-                                    <div class="folder-top"></div>
-                                    <div class="folder-bod"></div>
-                                    <div class="folder-text">team projects</div>
-                                </div>
-                            </div>
-                            <div class="personal-projects-folder">
-                                    <div class="folder">
-                                        <div class="folder-top"></div>
-                                        <div class="folder-bod"></div>
-                                        <div class="folder-text">personal projects</div>
-                                    </div>
-                                </div>
-                </div>
+                <div class="tab-title">client projects</div>
+
+
+            </div>
+            <div class="tab-contents">
+
+            </div>
         </div>
-        <div  class="tab-container client-projects-tab" style="display: none">
-                <div class="tab-handle">
-                    <div class="handle-dots-container">
-                            <div class="red" id="client-projects-tab-red"></div>
-                            <div class="yellow"></div>
-                            <div class="green"></div></div>
-                            <div class="tab-title">client projects</div>
-                        
-                    
+        <div class="tab-container team-projects-tab" style="display: none">
+            <div class="tab-handle">
+                <div class="handle-dots-container">
+                    <div class="red" id="team-projects-tab-red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
                 </div>
-                <div class="tab-contents">
-                    
-                </div>
+                <div class="tab-title">team projects</div>
+
+
+            </div>
+            <div class="tab-contents">
+
+            </div>
         </div>
-        <div  class="tab-container team-projects-tab" style="display: none">
-                <div class="tab-handle">
-                    <div class="handle-dots-container">
-                            <div class="red" id="team-projects-tab-red"></div>
-                            <div class="yellow"></div>
-                            <div class="green"></div></div>
-                            <div class="tab-title">team projects</div>
-                        
-                    
+        <div class="tab-container personal-projects-tab" style="display: none">
+            <div class="tab-handle">
+                <div class="handle-dots-container">
+                    <div class="red" id="personal-projects-tab-red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
                 </div>
-                <div class="tab-contents">
-                    
-                </div>
+                <div class="tab-title">personal-projects</div>
+
+
+            </div>
+            <div class="tab-contents">
+
+            </div>
         </div>
-        <div  class="tab-container personal-projects-tab" style="display: none">
-                <div class="tab-handle">
-                    <div class="handle-dots-container">
-                            <div class="red" id="personal-projects-tab-red"></div>
-                            <div class="yellow"></div>
-                            <div class="green"></div></div>
-                            <div class="tab-title">personal-projects</div>
-                        
-                    
+        <div class="tab-container experience-tab" style="display: none">
+            <div class="tab-handle">
+                <div class="handle-dots-container">
+                    <div class="red" id="experience-tab-red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
                 </div>
-                <div class="tab-contents">
-                    
-                </div>
-        </div>
-        <div  class="tab-container experience-tab" style="display: none">
-                <div class="tab-handle">
-                    <div class="handle-dots-container">
-                            <div class="red" id="experience-tab-red"></div>
-                            <div class="yellow"></div>
-                            <div class="green"></div></div>
-                            <div class="tab-title">experience</div>
-                        
-                    
-                </div>
-                <div class="tab-contents">
-                    
-                </div>
+                <div class="tab-title">experience</div>
+
+
+            </div>
+            <div class="tab-contents">
+
+            </div>
         </div>
     </section>
-    
-        <footer class="footer-container">
-            <div class=icon-container>
-                <a href="https://github.com/seabasshoang"><img src="public/assets/icons8-octocat-96.png" alt="github link"></a>
-                <a href=""><img src="public/assets/icons8-linkedin-96.png" alt="linkedin link"></a>
-                <img src="public/assets/icons8-important-mail-96.png" alt="email icon" class="email-icon">
-                <img src="public/assets/icons8-calendar-14-80.png" style="width: 70px; margin: 10px" alt="calendar" class="calendar-icon">
-                <span class="trash-icon">&#x1f5d1;</span>
-            </div>
-            <div class="footer-bg"></div>
-        </footer>
-        <script src="index.js"></script>
+
+    <footer class="footer-container">
+        <div class=icon-container>
+            <a href="https://github.com/seabasshoang"><img src="public/assets/icons8-octocat-96.png"
+                    alt="github link"></a>
+            <a href=""><img src="public/assets/icons8-linkedin-96.png" alt="linkedin link"></a>
+            <img src="public/assets/icons8-important-mail-96.png" alt="email icon" class="email-icon">
+            <img src="public/assets/icons8-calendar-14-80.png" style="width: 70px; margin: 10px" alt="calendar"
+                class="calendar-icon">
+            <span class="trash-icon">&#x1f5d1;</span>
+        </div>
+        <div class="footer-bg"></div>
+    </footer>
+    <script src="dom.js"></script>
 </body>
+
 </html>

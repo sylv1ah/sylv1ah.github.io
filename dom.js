@@ -1,3 +1,4 @@
+ const homeTab = document.querySelector('.home-tab');
 const skillsFolder = document.querySelector('.skills-folder');
 const skillsRed = document.querySelector('#skills-tab-red');
 const skillsTab = document.querySelector('.skills-tab');
@@ -30,10 +31,58 @@ const teamProjectsFolderOpen = document.querySelector('.team-projects-folder-ope
 const personalProjectsFolderClose = document.querySelector('.personal-projects-folder-close');
 const personalProjectsFolderOpen = document.querySelector('.personal-projects-folder-open');
 
+const tabArr = [homeTab, skillsTab, projectsTab, experienceTab, clientProjectsTab, teamProjectsTab, personalProjectsTab ];
+
+homeTab.addEventListener("click", () => {
+    let tempTabArr = tabArr.filter(tab => tab !== homeTab);
+    let tabOpenCheck = tempTabArr.filter(tab => tab.style.display === "block" );
+    if(tabOpenCheck.length > 1) {
+    tabOpenCheck.map(tab => {tab.style.zIndex = 1});
+    homeTab.style.zIndex = 2;
+    }
+});
+
+skillsTab.addEventListener("click", () => {
+    let tempTabArr = tabArr.filter(tab => tab !== skillsTab);
+    tempTabArr.map(tab => {tab.style.zIndex = 1});
+    skillsTab.style.zIndex = 2;
+});
+
+projectsTab.addEventListener("click", () => {
+    let tempTabArr = tabArr.filter(tab => tab !== projectsTab);
+    tempTabArr.map(tab => {tab.style.zIndex = 1});
+    projectsTab.style.zIndex = 2;
+});
+
+experienceTab.addEventListener("click", () => {
+    let tempTabArr = tabArr.filter(tab => tab !== experienceTab);
+    tempTabArr.map(tab => {tab.style.zIndex = 1});
+    experienceTab.style.zIndex = 2;
+});
+
+clientProjectsTab.addEventListener("click", () => {
+    let tempTabArr = tabArr.filter(tab => tab !== clientProjectsTab);
+    tempTabArr.map(tab => {tab.style.zIndex = 1});
+    clientProjectsTab.style.zIndex = 2;
+});
+
+teamProjectsTab.addEventListener("click", () => {
+    let tempTabArr = tabArr.filter(tab => tab !== teamProjectsTab);
+    tempTabArr.map(tab => {tab.style.zIndex = 1});
+    teamProjectsTab.style.zIndex = 2;
+});
+
+personalProjectsTab.addEventListener("click", () => {
+    let tempTabArr = tabArr.filter(tab => tab !== personalProjectsTab);
+    tempTabArr.map(tab => {tab.style.zIndex = 1});
+    personalProjectsTab.style.zIndex = 2;
+});
+
 skillsFolder.addEventListener("click", () => {
     console.log("skills folder clicked")
     if(skillsTab.style.display === "none")
         skillsTab.style.display = "block";
+        skillsTab.style.zIndex = 10;
         skillsFolderClose.style.display = "none";
         skillsFolderOpen.style.display = "block";
 });
@@ -128,10 +177,8 @@ personalProjectsRed.addEventListener("click", () => {
 function dragElement(elmnt) {
     var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
     if (document.getElementById(elmnt.id + "header")) {
-      /* if present, the header is where you move the DIV from:*/
       document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
     } else {
-      /* otherwise, move the DIV from anywhere inside the DIV:*/
       elmnt.onmousedown = dragMouseDown;
     }
   

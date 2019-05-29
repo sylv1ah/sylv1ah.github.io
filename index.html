@@ -18,9 +18,15 @@
     <section class="tab-section">
         <div id="mydiv" class="tab-container home-tab">
             <div id="mydivheader" class="handle-dots-container">
-                <div class="red"></div>
-                <div class="yellow"></div>
-                <div class="green"></div>
+                <div class="red">
+                    <div class="dot-symbol red-x">&#10005;</div>
+                </div>
+                <div class="yellow">
+                    <div class="dot-symbol yellow-x">&#8212;</div>
+                </div>
+                <div class="green">
+                    <div class="dot-symbol green-x">⤢</div>
+                </div>
             </div>
             <div class="tab-contents">
                 <div class="skills-folder">
@@ -53,10 +59,10 @@
                         <div class="folder-bod"></div>
                     </div>
                     <div class="folder folder-open experience-folder-open" style="display: none">
-                            <div class="folder-top"></div>
-                            <div class="folder-bod-open-back"></div>
-                            <div class="folder-bod-open"></div>
-                        </div>
+                        <div class="folder-top"></div>
+                        <div class="folder-bod-open-back"></div>
+                        <div class="folder-bod-open"></div>
+                    </div>
                     <div class="folder-text">experience</div>
                 </div>
                 <div class="cv-file">
@@ -71,60 +77,117 @@
             </div>
         </div>
         <div class="tab-container skills-tab" style="display: none">
-            <div class="tab-handle">
+            <div class="tab-handle skills-tab-handle">
                 <div class="handle-dots-container">
-                    <div class="red" id="skills-tab-red"></div>
-                    <div class="yellow"></div>
-                    <div class="green"></div>
+                    <div class="red" id="skills-tab-red">
+                        <div class="dot-symbol red-x">&#10005;</div>
+                    </div>
+                    <div class="yellow">
+                        <div class="dot-symbol yellow-x">&#8212;</div>
+                    </div>
+                    <div class="green">
+                        <div class="dot-symbol green-x">⤢</div>
+                    </div>
                 </div>
                 <div class="tab-title">skills</div>
 
 
             </div>
             <div class="tab-contents">
-                <div>
-                    <div class="html-icon folder">
-                        <img src="public/assets/icons8-html-5-100.png">
+                <div class="tab-contents-sub-title">Tech Skills</div>
+                <div class="tab-contents-inner">
+                    <div class="skills-icon-container">
+                        <div class="html-icon folder">
+                            <img class="icon-img" src="public/assets/react.png">
+                        </div>
+                        <div class="folder-text">React.js</div>
                     </div>
-                    <div class="folder-text">html</div>
+                    <div class="skills-icon-container">
+                        <div class="html-icon folder">
+                            <img class="icon-img" src="public/assets/handlebars.png">
+                        </div>
+                        <div class="folder-text">Handlebars</div>
+                    </div>
+                    <div class="skills-icon-container">
+                        <div class="js-icon folder">
+                            <img class="icon-img" src="public/assets/icons8-javascript-100.png">
+                        </div>
+                        <div class="folder-text">Javascript</div>
+
+                    </div>
+                    <div class="skills-icon-container">
+                        <div class="node-icon folder">
+                            <img class="icon-img" src="public/assets/icons8-nodejs-100.png">
+                        </div>
+                        <div class="folder-text">Node.js</div>
+
+                    </div>
+                    <div class="skills-icon-container">
+                        <div class="postgresql-icon folder">
+                            <img class="icon-img" src="public/assets/icons8-postgresql-100.png">
+                        </div>
+                        <div class="folder-text">Postgresql</div>
+
+                    </div>
+                    <div class="skills-icon-container">
+                        <div class="html-icon folder">
+                            <img class="icon-img" src="public/assets/icons8-html-5-100.png">
+                        </div>
+                        <div class="folder-text">HTML</div>
+                    </div>
+                    <div class="skills-icon-container">
+                        <div class="css-icon folder">
+                            <img class="icon-img" src="public/assets/icons8-css3-100.png">
+                        </div>
+                        <div class="folder-text">CSS</div>
+                    </div>
                 </div>
-                <div>
+
+                <div class="tab-contents-sub-title">Other Skills</div>
+                <div class="skills-icon-container">
                     <div class="css-icon folder">
-                        <img src="public/assets/icons8-css3-100.png">
-
+                        <img class="icon-img" src="public/assets/figma.png">
                     </div>
-                    <div class="folder-text">css</div>
+                    <div class="folder-text">Figma</div>
                 </div>
-                <div>
-                    <div class="js-icon folder">
-                        <img src="public/assets/icons8-javascript-100.png">
+                <div class="skills-icon-container">
+                    <div class="css-icon folder">
+                        <img class="icon-img" src="public/assets/photoshop.png">
                     </div>
-                    <div class="folder-text">javascript</div>
-
+                    <div class="folder-text">Photoshop</div>
                 </div>
-                <div>
-                    <div class="node-icon folder">
-                        <img src="public/assets/icons8-nodejs-100.png">
+                <div class="skills-icon-container">
+                    <div class="css-icon folder">
+                        <img class="icon-img" src="public/assets/illustrator.jpg">
                     </div>
-                    <div class="folder-text">node.js</div>
-
+                    <div class="folder-text">Illustrator</div>
                 </div>
-                <div>
-                    <div class="postgresql-icon folder">
-                        <img src="public/assets/icons8-postgresql-100.png">
+                <div class="skills-icon-container">
+                    <div class="css-icon folder">
+                        <img class="icon-img" src="public/assets/fcp.png">
                     </div>
-                    <div class="folder-text">postgresql</div>
-
+                    <div class="folder-text">Final Cut Pro</div>
                 </div>
-
+                <div class="skills-icon-container">
+                    <div class="css-icon folder">
+                        <img class="icon-img" src="public/assets/motion.png">
+                    </div>
+                    <div class="folder-text">Motion</div>
+                </div>
             </div>
         </div>
         <div class="tab-container projects-tab" style="display: none">
             <div class="tab-handle">
                 <div class="handle-dots-container">
-                    <div class="red" id="projects-tab-red"></div>
-                    <div class="yellow"></div>
-                    <div class="green"></div>
+                    <div class="red" id="projects-tab-red">
+                        <div class="dot-symbol red-x">&#10005;</div>
+                    </div>
+                    <div class="yellow">
+                        <div class="dot-symbol yellow-x">&#8212;</div>
+                    </div>
+                    <div class="green">
+                        <div class="dot-symbol green-x">⤢</div>
+                    </div>
                 </div>
                 <div class="tab-title">projects</div>
 
@@ -137,10 +200,10 @@
                         <div class="folder-bod"></div>
                     </div>
                     <div class="folder folder-open client-projects-folder-open" style="display: none">
-                            <div class="folder-top"></div>
-                            <div class="folder-bod-open-back"></div>
-                            <div class="folder-bod-open"></div>
-                        </div>
+                        <div class="folder-top"></div>
+                        <div class="folder-bod-open-back"></div>
+                        <div class="folder-bod-open"></div>
+                    </div>
                     <div class="folder-text">client-projects</div>
                 </div>
                 <div class="team-projects-folder">
@@ -149,10 +212,10 @@
                         <div class="folder-bod"></div>
                     </div>
                     <div class="folder folder-open team-projects-folder-open" style="display: none">
-                            <div class="folder-top"></div>
-                            <div class="folder-bod-open-back"></div>
-                            <div class="folder-bod-open"></div>
-                        </div>
+                        <div class="folder-top"></div>
+                        <div class="folder-bod-open-back"></div>
+                        <div class="folder-bod-open"></div>
+                    </div>
                     <div class="folder-text">team projects</div>
                 </div>
                 <div class="personal-projects-folder">
@@ -161,20 +224,26 @@
                         <div class="folder-bod"></div>
                     </div>
                     <div class="folder folder-open personal-projects-folder-open" style="display: none">
-                            <div class="folder-top"></div>
-                            <div class="folder-bod-open-back"></div>
-                            <div class="folder-bod-open"></div>
-                        </div>
-                    <div class="folder-text">personal projects</div>    
+                        <div class="folder-top"></div>
+                        <div class="folder-bod-open-back"></div>
+                        <div class="folder-bod-open"></div>
+                    </div>
+                    <div class="folder-text">personal projects</div>
                 </div>
             </div>
         </div>
         <div class="tab-container client-projects-tab" style="display: none">
             <div class="tab-handle">
                 <div class="handle-dots-container">
-                    <div class="red" id="client-projects-tab-red"></div>
-                    <div class="yellow"></div>
-                    <div class="green"></div>
+                    <div class="red" id="client-projects-tab-red">
+                        <div class="dot-symbol red-x">&#10005;</div>
+                    </div>
+                    <div class="yellow">
+                        <div class="dot-symbol yellow-x">&#8212;</div>
+                    </div>
+                    <div class="green">
+                        <div class="dot-symbol green-x">⤢</div>
+                    </div>
                 </div>
                 <div class="tab-title">client projects</div>
 
@@ -187,9 +256,15 @@
         <div class="tab-container team-projects-tab" style="display: none">
             <div class="tab-handle">
                 <div class="handle-dots-container">
-                    <div class="red" id="team-projects-tab-red"></div>
-                    <div class="yellow"></div>
-                    <div class="green"></div>
+                    <div class="red" id="team-projects-tab-red">
+                        <div class="dot-symbol red-x">&#10005;</div>
+                    </div>
+                    <div class="yellow">
+                        <div class="dot-symbol yellow-x">&#8212;</div>
+                    </div>
+                    <div class="green">
+                        <div class="dot-symbol green-x">⤢</div>
+                    </div>
                 </div>
                 <div class="tab-title">team projects</div>
 
@@ -202,9 +277,15 @@
         <div class="tab-container personal-projects-tab" style="display: none">
             <div class="tab-handle">
                 <div class="handle-dots-container">
-                    <div class="red" id="personal-projects-tab-red"></div>
-                    <div class="yellow"></div>
-                    <div class="green"></div>
+                    <div class="red" id="personal-projects-tab-red">
+                        <div class="dot-symbol red-x">&#10005;</div>
+                    </div>
+                    <div class="yellow">
+                        <div class="dot-symbol yellow-x">&#8212;</div>
+                    </div>
+                    <div class="green">
+                        <div class="dot-symbol green-x">⤢</div>
+                    </div>
                 </div>
                 <div class="tab-title">personal-projects</div>
 
@@ -217,9 +298,15 @@
         <div class="tab-container experience-tab" style="display: none">
             <div class="tab-handle">
                 <div class="handle-dots-container">
-                    <div class="red" id="experience-tab-red"></div>
-                    <div class="yellow"></div>
-                    <div class="green"></div>
+                    <div class="red" id="experience-tab-red">
+                        <div class="dot-symbol red-x">&#10005;</div>
+                    </div>
+                    <div class="yellow">
+                        <div class="dot-symbol yellow-x">&#8212;</div>
+                    </div>
+                    <div class="green">
+                        <div class="dot-symbol green-x">⤢</div>
+                    </div>
                 </div>
                 <div class="tab-title">experience</div>
 

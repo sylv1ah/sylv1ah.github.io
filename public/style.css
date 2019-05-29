@@ -56,9 +56,27 @@ h2 {
 .team-projects-tab,
 .personal-projects-tab {
     position: absolute;
-    z-index: 1;
     background-color: rgba(255, 255, 255, 0.79);
     margin:0;
+}
+
+.skills-tab {
+    z-index: 2;
+} 
+.projects-tab {
+    z-index: 3;
+}
+.experience-tab {
+    z-index: 4;
+} 
+.client-projects-tab {
+    z-index: 5;
+}
+.team-projects-tab {
+    z-index: 6;
+}
+.personal-projects-tab {
+    z-index: 7;
 }
 
 .tab-container {
@@ -83,8 +101,26 @@ h2 {
     width: 15px;
     height: 15px;
     border-radius: 10px;
-    background-color: #FC5B57;
     margin: 0 4px 0 8px;
+    background-color: #FC5B57;
+    cursor: pointer;
+}
+
+.red-x {
+    color: rgb(159,	11,	17	); 
+}
+
+.dot-symbol {
+    display: none;  
+    text-align: center;
+    margin-top: 1px;
+    font-size: 12px;
+    font-weight: bold;
+}   
+
+.handle-dots-container:hover .dot-symbol {
+        display: block;
+    
 }
 
 .yellow {
@@ -95,6 +131,10 @@ h2 {
     margin: 4px;
 }
 
+.yellow-x {
+    color: rgb(178,	140,	38	); 
+}
+
 .green {
     width: 15px;
     height: 15px;
@@ -103,12 +143,39 @@ h2 {
     margin: 4px;
 }
 
+.green-x {
+    color: rgb(8,	91,	10	); 
+}
+
 .tab-contents {
     display: flex;
     flex-wrap: wrap;
     margin: 30px 25px 0 25px;
     overflow: scroll;
     height: 54.5vh;
+}
+
+.tab-contents-inner {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+    height: 33vh;
+}
+
+.tab-contents-sub-title {
+    margin: 10px;
+    width: 100%;
+    font-weight: bold;
+    border-bottom: 1px solid;
+    padding: 10px
+}
+
+.icon-img {
+    width: 100px;
+}
+
+.skills-icon-container {
+    height: auto;
 }
 
 .folder {
@@ -316,6 +383,7 @@ h2 {
     } 
 
     .folder-text {
-    margin-top: -25px;
+    margin-top: 0px;
+    margin-bottom: 20px;
     }
 }

@@ -179,7 +179,7 @@ h2 {
 }
 
 .folder {
-    margin: 20px;
+    margin: 15px;
     width: 100px;
     cursor: pointer;
 }
@@ -313,6 +313,45 @@ h2 {
     top: 4%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.project-object {
+    width: 100%;
+}
+.project-object-title {
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.project-object-title a:hover {
+    border-bottom: 2px solid black;
+}
+.project-object-description {
+    margin: 10px;
+}
+.project-object-languages {
+    display: flex;
+    align-items: center;
+    margin: -15px 0;
+    /* overflow:scroll; */
+    flex-wrap: wrap;
+    border-bottom: 1px solid black;
+}
+.language-tag {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+.project-object-github-repo {
+    padding:5px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+.project-object-github-repo img:hover {
+    background-color: rgba(204, 181, 52, 0.562);
+    /* border: 1px solid black; */
+    border-radius: 50%;
 }
 /* --------------------------desktop styling-------------------------- */
 

@@ -16,8 +16,8 @@
         <h2>I’m a junior full-stack web-developer.</h2>
     </div>
     <section class="tab-section">
-        <div id="mydiv" class="tab-container home-tab">
-            <div id="mydivheader" class="handle-dots-container">
+        <div id="homeTab" class="tab-container home-tab">
+            <div id="homeTabHandle" class="handle-dots-container">
                 <div class="red">
                     <div class="dot-symbol red-x">&#10005;</div>
                 </div>
@@ -76,9 +76,8 @@
 
             </div>
         </div>
-        <div class="tab-container skills-tab" style="display: none">
-            <div  class="tab-handle skills-tab-handle">
-                <div id="mydivheader" class="handle-dots-container">
+        <div id="skillsTab" class="tab-container skills-tab" style="display: none">
+                <div id="skillsTabHandle" class="handle-dots-container">
                     <div class="red" id="skills-tab-red">
                         <div class="dot-symbol red-x">&#10005;</div>
                     </div>
@@ -92,7 +91,6 @@
                 <div class="tab-title">skills</div>
 
 
-            </div>
             <div class="tab-contents">
                 <div class="tab-contents-sub-title">Tech Skills</div>
                 <div class="tab-contents-inner">
@@ -144,41 +142,44 @@
                 </div>
 
                 <div class="tab-contents-sub-title">Other Skills</div>
-                <div class="skills-icon-container">
-                    <div class="css-icon folder">
-                        <img class="icon-img" src="public/assets/figma.png">
+                <div class="tab-contents-inner">
+                    <div class="skills-icon-container">
+                        <div class="css-icon folder">
+                            <img class="icon-img" src="public/assets/figma.png">
+                        </div>
+                        <div class="folder-text">Figma</div>
                     </div>
-                    <div class="folder-text">Figma</div>
-                </div>
-                <div class="skills-icon-container">
-                    <div class="css-icon folder">
-                        <img class="icon-img" src="public/assets/photoshop.png">
+                    <div class="skills-icon-container">
+                        <div class="css-icon folder">
+                            <img class="icon-img" src="public/assets/photoshop.png">
+                        </div>
+                        <div class="folder-text">Photoshop</div>
                     </div>
-                    <div class="folder-text">Photoshop</div>
-                </div>
-                <div class="skills-icon-container">
-                    <div class="css-icon folder">
-                        <img class="icon-img" src="public/assets/illustrator.jpg">
+                    <div class="skills-icon-container">
+                        <div class="css-icon folder">
+                            <img class="icon-img" src="public/assets/illustrator.jpg">
+                        </div>
+                        <div class="folder-text">Illustrator</div>
                     </div>
-                    <div class="folder-text">Illustrator</div>
-                </div>
-                <div class="skills-icon-container">
-                    <div class="css-icon folder">
-                        <img class="icon-img" src="public/assets/fcp.png">
+                    <div class="skills-icon-container">
+                        <div class="css-icon folder">
+                            <img class="icon-img" src="public/assets/fcp.png">
+                        </div>
+                        <div class="folder-text">Final Cut Pro</div>
                     </div>
-                    <div class="folder-text">Final Cut Pro</div>
-                </div>
-                <div class="skills-icon-container">
-                    <div class="css-icon folder">
-                        <img class="icon-img" src="public/assets/motion.png">
+                    <div class="skills-icon-container">
+                        <div class="css-icon folder">
+                            <img class="icon-img" src="public/assets/motion.png">
+                        </div>
+                        <div class="folder-text">Motion</div>
                     </div>
-                    <div class="folder-text">Motion</div>
                 </div>
+
             </div>
         </div>
-        <div class="tab-container projects-tab" style="display: none">
-            <div id="mydivheader" class="tab-handle">
-                <div class="handle-dots-container">
+        <div id="projectsTab" class="tab-container projects-tab" style="display: none">
+         
+                <div  id="projectsTabHandle" class="handle-dots-container">
                     <div class="red" id="projects-tab-red">
                         <div class="dot-symbol red-x">&#10005;</div>
                     </div>
@@ -192,22 +193,21 @@
                 <div class="tab-title">projects</div>
 
 
-            </div>
             <div class="tab-contents">
-                <div class="client-projects-folder">
-                    <div class="folder client-projects-folder-close">
+                <div>
+                    <div class="folder client-projects-folder client-projects-folder-close">
                         <div class="folder-top"></div>
                         <div class="folder-bod"></div>
                     </div>
-                    <div class="folder folder-open client-projects-folder-open" style="display: none">
+                    <div class="folder client-projects-folder folder-open client-projects-folder-open" style="display: none">
                         <div class="folder-top"></div>
                         <div class="folder-bod-open-back"></div>
                         <div class="folder-bod-open"></div>
                     </div>
                     <div class="folder-text">client-projects</div>
                 </div>
-                <div class="team-projects-folder">
-                    <div class="folder team-projects-folder-close">
+                <div>
+                    <div class="folder team-projects-folder team-projects-folder-close">
                         <div class="folder-top"></div>
                         <div class="folder-bod"></div>
                     </div>
@@ -218,8 +218,8 @@
                     </div>
                     <div class="folder-text">team projects</div>
                 </div>
-                <div class="personal-projects-folder">
-                    <div class="folder personal-projects-folder-close">
+                <div>
+                    <div class="folder personal-projects-folder personal-projects-folder-close">
                         <div class="folder-top"></div>
                         <div class="folder-bod"></div>
                     </div>
@@ -232,9 +232,9 @@
                 </div>
             </div>
         </div>
-        <div class="tab-container client-projects-tab" style="display: none">
-            <div id="mydivheader" class="tab-handle">
-                <div class="handle-dots-container">
+        <div id="clientProjectsTab" class="tab-container client-projects-tab" style="display: none">
+           
+                <div id="clientProjectsTabHandle" class="handle-dots-container">
                     <div class="red" id="client-projects-tab-red">
                         <div class="dot-symbol red-x">&#10005;</div>
                     </div>
@@ -248,14 +248,13 @@
                 <div class="tab-title">client projects</div>
 
 
-            </div>
             <div class="tab-contents">
                 <p>no client projects yet ;)</p>
             </div>
         </div>
-        <div class="tab-container team-projects-tab" style="display: none">
-            <div id="mydivheader" class="tab-handle">
-                <div class="handle-dots-container">
+        <div id="teamProjectsTab" class="tab-container team-projects-tab" style="display: none">
+         
+                <div id="teamProjectsTabHandle" class="handle-dots-container">
                     <div class="red" id="team-projects-tab-red">
                         <div class="dot-symbol red-x">&#10005;</div>
                     </div>
@@ -269,84 +268,88 @@
                 <div class="tab-title">team projects</div>
 
 
-            </div>
             <div class="tab-contents">
-                    <div class="project-object">
-                            <h3 class="project-object-title">
-                                    <img src="./public/assets/icons8-external-link-16.png"/>
-                                <a href="https://remindly-app.herokuapp.com/" target="_blank">Remindly</a>
-                            </h3>
-                            <div class="project-object-description">
-                                    Birthday/events reminder app.
-                            </div>
-                            <div class="project-object-languages">
-                                    <div class="project-object-github-repo"><a href="https://github.com/seabasshoang/Remindly" target="_blank"><img src="./public/assets/icons8-github-32.png"></a></div>
-                                <div class="language-tag">Javascript</div>
-                                <div class="language-tag">Express</div>
-                                <div class="language-tag">Node.js</div>
-                                <div class="language-tag">Handlebars</div>
-                                <div class="language-tag">Postgresql</div>
-                                <div class="language-tag">Jest</div>
-                                <div class="language-tag">Twilio</div>
-                                <div class="language-tag">bcrypt</div>
-                                <div class="language-tag">JWT</div>
-                                <div class="language-tag">Travis</div>
-                                <div class="language-tag">Heroku Scheduler</div>
-                                <div class="language-tag">Heroku</div>
-                                
-                            </div>
-                        </div>
-                        <div class="project-object">
-                                <h3 class="project-object-title">
-                                        <img src="./public/assets/icons8-external-link-16.png"/>
-                                    <a href="https://train-departures-app.herokuapp.com/" target="_blank">Train Departure App</a>
-                                </h3>
-                                <div class="project-object-description">
-                                        An app that allows the user to search and check next train departure times from any underground station.
-                                </div>
-                                <div class="project-object-languages">
-                                        <div class="project-object-github-repo"><a href="https://github.com/seabasshoang/week5-trains" target="_blank"><img src="./public/assets/icons8-github-32.png"></a></div>
-                                    <div class="language-tag">Javascript</div>
-                                    <div class="language-tag">Node.js</div>
-                                    <div class="language-tag">Travis</div>
-                                    <div class="language-tag">TFL API</div>
-                                    <div class="language-tag">Heroku</div>
-                                   
-                                </div>
-                            </div>
-                            <div class="project-object">
-                                    <h3 class="project-object-title">
-                                            <img src="./public/assets/icons8-external-link-16.png"/>
-                                        <a href="https://fac-sixteen.github.io/Week3-Magic3/" target="_blank">FoodFlix</a>
-                                    </h3>
-                                    <div class="project-object-description">
-                                            API app matching a movie with a meal.
-                                    </div>
-                                    <div class="project-object-languages">
-                                            <div class="project-object-github-repo"><a href="https://github.com/FAC-Sixteen/Week3-Magic3" target="_blank"><img src="./public/assets/icons8-github-32.png"></a></div>
-                                        <div class="language-tag">Javascript</div>
-                                        
-                                    </div>
-                                </div>
-                                <div class="project-object">
-                                        <h3 class="project-object-title">
-                                                <img src="./public/assets/icons8-external-link-16.png"/>
-                                            <a href="https://afternoon-escarpment-93849.herokuapp.com/" target="_blank">World Search</a>
-                                        </h3>
-                                        <div class="project-object-description">
-                                                Country search autocomplete.
-                                        </div>
-                                        <div class="project-object-languages">
-                                            
-                                            <div class="project-object-github-repo"><a href="https://github.com/FAC-Sixteen/Wonder3-V2" target="_blank"><img src="./public/assets/icons8-github-32.png"></a></div>
-                                            <div class="language-tag">Javascript</div>
-                                        </div>
-                                    </div>
+                <div class="project-object">
+                    <h3 class="project-object-title">
+                        <img src="./public/assets/icons8-external-link-16.png" />
+                        <a href="https://remindly-app.herokuapp.com/" target="_blank">Remindly</a>
+                    </h3>
+                    <div class="project-object-description">
+                        Birthday/events reminder app.
+                    </div>
+                    <div class="project-object-languages">
+                        <div class="project-object-github-repo"><a href="https://github.com/seabasshoang/Remindly"
+                                target="_blank"><img src="./public/assets/icons8-github-32.png"></a></div>
+                        <div class="language-tag">Javascript</div>
+                        <div class="language-tag">Express</div>
+                        <div class="language-tag">Node.js</div>
+                        <div class="language-tag">Handlebars</div>
+                        <div class="language-tag">Postgresql</div>
+                        <div class="language-tag">Jest</div>
+                        <div class="language-tag">Twilio</div>
+                        <div class="language-tag">bcrypt</div>
+                        <div class="language-tag">JWT</div>
+                        <div class="language-tag">Travis</div>
+                        <div class="language-tag">Heroku Scheduler</div>
+                        <div class="language-tag">Heroku</div>
+
+                    </div>
+                </div>
+                <div class="project-object">
+                    <h3 class="project-object-title">
+                        <img src="./public/assets/icons8-external-link-16.png" />
+                        <a href="https://train-departures-app.herokuapp.com/" target="_blank">Train Departure App</a>
+                    </h3>
+                    <div class="project-object-description">
+                        An app that allows the user to search and check next train departure times from any underground
+                        station.
+                    </div>
+                    <div class="project-object-languages">
+                        <div class="project-object-github-repo"><a href="https://github.com/seabasshoang/week5-trains"
+                                target="_blank"><img src="./public/assets/icons8-github-32.png"></a></div>
+                        <div class="language-tag">Javascript</div>
+                        <div class="language-tag">Node.js</div>
+                        <div class="language-tag">Travis</div>
+                        <div class="language-tag">TFL API</div>
+                        <div class="language-tag">Heroku</div>
+
+                    </div>
+                </div>
+                <div class="project-object">
+                    <h3 class="project-object-title">
+                        <img src="./public/assets/icons8-external-link-16.png" />
+                        <a href="https://fac-sixteen.github.io/Week3-Magic3/" target="_blank">FoodFlix</a>
+                    </h3>
+                    <div class="project-object-description">
+                        API app matching a movie with a meal.
+                    </div>
+                    <div class="project-object-languages">
+                        <div class="project-object-github-repo"><a href="https://github.com/FAC-Sixteen/Week3-Magic3"
+                                target="_blank"><img src="./public/assets/icons8-github-32.png"></a></div>
+                        <div class="language-tag">Javascript</div>
+
+                    </div>
+                </div>
+                <div class="project-object">
+                    <h3 class="project-object-title">
+                        <img src="./public/assets/icons8-external-link-16.png" />
+                        <a href="https://afternoon-escarpment-93849.herokuapp.com/" target="_blank">World Search</a>
+                    </h3>
+                    <div class="project-object-description">
+                        Country search autocomplete.
+                    </div>
+                    <div class="project-object-languages">
+
+                        <div class="project-object-github-repo"><a href="https://github.com/FAC-Sixteen/Wonder3-V2"
+                                target="_blank"><img src="./public/assets/icons8-github-32.png"></a></div>
+                        <div class="language-tag">Javascript</div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="tab-container personal-projects-tab" style="display: none">
-            <div id="mydivheader" class="tab-handle">
-                <div class="handle-dots-container">
+        <div id="personalProjectsTab" class="tab-container personal-projects-tab" style="display: none">
+     
+                <div id="personalProjectsTabHandle" class="handle-dots-container">
                     <div class="red" id="personal-projects-tab-red">
                         <div class="dot-symbol red-x">&#10005;</div>
                     </div>
@@ -360,30 +363,31 @@
                 <div class="tab-title">personal-projects</div>
 
 
-            </div>
             <div class="tab-contents">
                 <div class="project-object">
                     <h3 class="project-object-title">
-                            <img src="./public/assets/icons8-external-link-16.png"/>
+                        <img src="./public/assets/icons8-external-link-16.png" />
                         <a href="https://hungry-for-apples.herokuapp.com/" target="_blank"> Hungry for Apples</a>
                     </h3>
                     <div class="project-object-description">
                         Rick and Morty character search
                     </div>
                     <div class="project-object-languages">
-                            <span class="project-object-github-repo"><a href="https://github.com/seabasshoang/hungry-for-apples" target="_blank"><img src="./public/assets/icons8-github-32.png"></a></span>
+                        <span class="project-object-github-repo"><a
+                                href="https://github.com/seabasshoang/hungry-for-apples" target="_blank"><img
+                                    src="./public/assets/icons8-github-32.png"></a></span>
                         <span class="language-tag">Javascript</span>
                         <span class="language-tag">Express</span>
                         <span class="language-tag">Handlebars</span>
                         <span class="language-tag">Heroku</span>
-                        
+
                     </div>
                 </div>
             </div>
         </div>
-        <div class="tab-container experience-tab" style="display: none">
+        <div id="experienceTab" class="tab-container experience-tab" style="display: none">
             <div  class="tab-handle">
-                <div id="mydivheader" class="handle-dots-container">
+                <div id="experienceTabHandle" class="handle-dots-container">
                     <div class="red" id="experience-tab-red">
                         <div class="dot-symbol red-x">&#10005;</div>
                     </div>

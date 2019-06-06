@@ -43,12 +43,7 @@ h2 {
     position: sticky;
 }
 
-.home-tab {
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.79);
-    margin:0;
-}
-
+.home-tab,
 .skills-tab, 
 .projects-tab, 
 .experience-tab, 
@@ -56,7 +51,7 @@ h2 {
 .team-projects-tab,
 .personal-projects-tab {
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.79);
+    background-color: rgba(255, 255, 255, 0.9);
     margin:0;
 }
 
@@ -95,6 +90,11 @@ h2 {
     display: flex;
     align-items: center;
     position: absolute;
+    cursor: grab;
+}
+
+.grabbing {
+    cursor: grabbing;
 }
 
 .red {
@@ -150,7 +150,9 @@ h2 {
 .tab-contents {
     display: flex;
     flex-wrap: wrap;
-    margin: 30px 25px 0 25px;
+    margin: 30px 0px 0px 0px;
+    padding: 10px 25px 0 25px;
+    justify-content: space-between;
     overflow: scroll;
     height: 54.5vh;
 }
@@ -158,8 +160,9 @@ h2 {
 .tab-contents-inner {
     display: flex;
     flex-wrap: wrap;
-    overflow: scroll;
-    height: 33vh;
+    justify-content: space-between;
+    /* overflow: scroll; */
+    /* height: 33vh; */
 }
 
 .tab-contents-sub-title {
@@ -167,7 +170,8 @@ h2 {
     width: 100%;
     font-weight: bold;
     border-bottom: 1px solid;
-    padding: 10px
+    padding: 10px;
+    user-select: none;
 }
 
 .icon-img {
@@ -300,7 +304,7 @@ h2 {
 .footer-bg {
     bottom:0;
     background-color: rgba(196, 196, 196, 0.721);
-    opacity: 80%;
+    opacity: 90%;
     width: 100vw;
     height: 100px;
     border-radius: 10px 10px 0 0;
@@ -313,6 +317,7 @@ h2 {
     top: 4%;
     left: 50%;
     transform: translate(-50%, -50%);
+    user-select: none;
 }
 
 .project-object {
@@ -322,9 +327,11 @@ h2 {
     cursor: pointer;
     margin-top: 30px;
     margin-bottom: 10px;
+    user-select: none;
 }
 .project-object-title a:hover {
     border-bottom: 2px solid black;
+    user-select: none;
 }
 .project-object-description {
     margin: 10px;
@@ -335,7 +342,9 @@ h2 {
     margin: -15px 0;
     /* overflow:scroll; */
     flex-wrap: wrap;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid black;    
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 .language-tag {
     border: 1px solid black;
@@ -417,9 +426,9 @@ h2 {
         z-index: 1;
     }
 
-    .folder {
+    /* .folder {
     height: 100px;  
-    } 
+    }  */
 
     .folder-text {
     margin-top: 0px;

@@ -176,11 +176,12 @@ personalProjectsRed.addEventListener("click", () => {
 });
 function dragElement(elmnt) {
     var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-    if (document.getElementById(elmnt.id + "header")) {
-      document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-    } else {
-      elmnt.onmousedown = dragMouseDown;
-    }
+    if (document.getElementById(elmnt.id + "Handle")) {
+      document.getElementById(elmnt.id + "Handle").onmousedown = dragMouseDown;
+    } 
+    // else {
+    //   elmnt.onmousedown = dragMouseDown;
+    // }
   
     function dragMouseDown(e) {
       e = e || window.event;
@@ -191,6 +192,7 @@ function dragElement(elmnt) {
       document.onmouseup = closeDragElement;
       // call a function whenever the cursor moves:
       document.onmousemove = elementDrag;
+      document.getElementById(elmnt.id + "Handle").classList.add("grabbing");
     }
   
     function elementDrag(e) {
@@ -210,6 +212,7 @@ function dragElement(elmnt) {
       /* stop moving when mouse button is released:*/
       document.onmouseup = null;
       document.onmousemove = null;
+      document.getElementById(elmnt.id + "Handle").classList.remove("grabbing")
     }
   }
   dragElement(document.querySelector('.home-tab'));

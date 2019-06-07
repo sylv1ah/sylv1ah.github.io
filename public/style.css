@@ -362,6 +362,37 @@ h2 {
     /* border: 1px solid black; */
     border-radius: 50%;
 }
+
+.experience-tab-item-timeline{
+    border-left: dotted 3px black;
+    margin-right: 20px;
+}
+
+.experience-tab-item-dot{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: black;
+    position: relative;
+    left: 9px;
+}
+
+.experience-tab-item-info{
+    word-wrap: normal;
+    width: 90%;
+}
+
+.experience-tab-each-item {
+    display: flex;
+}
+
+.experience-tab-items {
+    padding-top:20px;
+}
+
+h4 {
+    margin-top:0px;
+}
 /* --------------------------desktop styling-------------------------- */
 
 @media only screen and (min-width: 830px) {

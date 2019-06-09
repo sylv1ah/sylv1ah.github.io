@@ -303,12 +303,35 @@ a {
     justify-content: center;
 }
 
+.footer-title {
+    text-align: center;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 0 0 20px 0;
+    background-color: rgba(70, 70, 70, 0.70);
+    color: white;
+    opacity: 0;
+    user-select: none;
+}
+
+/* #github-title {
+    opacity: 0;
+} */
+
+.footer-icon:hover~.footer-title {
+    opacity: 1;
+}
+
+.footer-icon:hover {}
+
 .icon-container {
     position: absolute;
     margin-top: 10px;
     position: absolute;
     z-index: 1;
     bottom: 0;
+    display: flex;
 }
 
 .icon-container img {
@@ -327,6 +350,12 @@ a {
     height: 100px;
     border-radius: 10px 10px 0 0;
     position: absolute;
+}
+
+.footer-item {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .tab-title {
@@ -521,10 +550,29 @@ textarea {
         height: 90px;
     }
 
+    .footer-title {
+        text-align: center;
+        border: 0.5px solid black;
+        border-radius: 5px;
+        padding: 3px;
+        margin: 0 0 20px 0;
+        background-color: rgba(70, 70, 70, 0.70);
+        color: white;
+        /* opacity: 1; */
+        user-select: none;
+    }
+
+
+    .icon-container:hover~.footer-title {
+        opacity: 0;
+    }
+
     .icon-container {
         position: absolute;
         bottom: 0;
         z-index: 1;
+        display: flex;
+        align-items: center;
     }
 
     /* .folder {

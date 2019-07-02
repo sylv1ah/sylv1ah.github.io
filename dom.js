@@ -34,6 +34,13 @@ const clientProjectRe4wRed = document.querySelector(
   "#project-client-re4w-tab-red"
 );
 const clientProjectRe4wTab = document.querySelector(".project-client-re4w-tab");
+const teamProjectRemindlyLink = document.querySelector(".project-remindly");
+const teamProjectRemindlyRed = document.querySelector(
+  "#project-team-remindly-tab-red"
+);
+const teamProjectRemindlyTab = document.querySelector(
+  ".project-team-remindly-tab"
+);
 
 const emailIcon = document.querySelector(".email-icon");
 const emailRed = document.querySelector("#email-form-tab-red");
@@ -238,6 +245,18 @@ clientProjectRe4wRed.addEventListener("click", () => {
     clientProjectRe4wTab.style.display = "none";
 });
 
+teamProjectRemindlyLink.addEventListener("click", () => {
+  console.log("personalProjectAppleLink folder clicked");
+  if (teamProjectRemindlyTab.style.display === "none")
+    teamProjectRemindlyTab.style.display = "block";
+});
+
+teamProjectRemindlyRed.addEventListener("click", () => {
+  console.log("personalProjects red button clicked");
+  if (teamProjectRemindlyTab.style.display === "block")
+    teamProjectRemindlyTab.style.display = "none";
+});
+
 emailIcon.addEventListener("click", () => {
   if (emailTab.style.display === "none") emailTab.style.display = "block";
 });
@@ -300,3 +319,4 @@ dragElement(document.querySelector(".personal-projects-tab"));
 dragElement(document.querySelector(".email-form-tab"));
 dragElement(document.querySelector(".project-personal-apples-tab"));
 dragElement(document.querySelector(".project-client-re4w-tab"));
+dragElement(document.querySelector(".project-team-remindly-tab"));

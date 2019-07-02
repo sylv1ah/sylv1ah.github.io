@@ -29,6 +29,11 @@ const personalProjectApplesRed = document.querySelector(
 const personalProjectApplesTab = document.querySelector(
   ".project-personal-apples-tab"
 );
+const clientProjectRe4wLink = document.querySelector(".project-re4w");
+const clientProjectRe4wRed = document.querySelector(
+  "#project-client-re4w-tab-red"
+);
+const clientProjectRe4wTab = document.querySelector(".project-client-re4w-tab");
 
 const emailIcon = document.querySelector(".email-icon");
 const emailRed = document.querySelector("#email-form-tab-red");
@@ -221,6 +226,18 @@ personalProjectApplesRed.addEventListener("click", () => {
     personalProjectApplesTab.style.display = "none";
 });
 
+clientProjectRe4wLink.addEventListener("click", () => {
+  console.log("personalProjectAppleLink folder clicked");
+  if (clientProjectRe4wTab.style.display === "none")
+    clientProjectRe4wTab.style.display = "block";
+});
+
+clientProjectRe4wRed.addEventListener("click", () => {
+  console.log("personalProjects red button clicked");
+  if (clientProjectRe4wTab.style.display === "block")
+    clientProjectRe4wTab.style.display = "none";
+});
+
 emailIcon.addEventListener("click", () => {
   if (emailTab.style.display === "none") emailTab.style.display = "block";
 });
@@ -282,3 +299,4 @@ dragElement(document.querySelector(".team-projects-tab"));
 dragElement(document.querySelector(".personal-projects-tab"));
 dragElement(document.querySelector(".email-form-tab"));
 dragElement(document.querySelector(".project-personal-apples-tab"));
+dragElement(document.querySelector(".project-client-re4w-tab"));

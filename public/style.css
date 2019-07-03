@@ -512,12 +512,14 @@ textarea {
   margin-top: 20px;
   margin-bottom: 10px;
   margin-left: 20px;
+  font-size: 11px;
 }
 
 .see-live a {
   border: 1px solid black;
+  border-radius: 3px;
   width: fit-content;
-  padding: 5px;
+  padding: 1px 7px 2px;
 }
 
 .see-live a:hover {
@@ -612,8 +614,8 @@ textarea {
   .footer-bg {
     position: absolute;
     bottom: 0;
-    width: 400px;
-    height: 90px;
+    width: 370px;
+    height: 75px;
   }
 
   .footer-title {

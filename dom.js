@@ -129,7 +129,6 @@ const tabArr = [
 // });
 
 skillsFolder.addEventListener("click", () => {
-  console.log("skills folder clicked");
   if (skillsTab.style.display === "none") skillsTab.style.display = "block";
   // skillsTab.style.zIndex = 10;
   skillsFolderClose.style.display = "none";
@@ -137,28 +136,24 @@ skillsFolder.addEventListener("click", () => {
 });
 
 skillsRed.addEventListener("click", () => {
-  console.log("skills red button clicked");
   if (skillsTab.style.display === "block") skillsTab.style.display = "none";
   skillsFolderClose.style.display = "block";
   skillsFolderOpen.style.display = "none";
 });
 
 projectsFolder.addEventListener("click", () => {
-  console.log("projects folder clicked");
   if (projectsTab.style.display === "none") projectsTab.style.display = "block";
   projectsFolderClose.style.display = "none";
   projectsFolderOpen.style.display = "block";
 });
 
 projectsRed.addEventListener("click", () => {
-  console.log("projects red button clicked");
   if (projectsTab.style.display === "block") projectsTab.style.display = "none";
   projectsFolderClose.style.display = "block";
   projectsFolderOpen.style.display = "none";
 });
 
 experienceFolder.addEventListener("click", () => {
-  console.log("experience folder clicked");
   if (experienceTab.style.display === "none")
     experienceTab.style.display = "block";
   experienceFolderClose.style.display = "none";
@@ -166,7 +161,6 @@ experienceFolder.addEventListener("click", () => {
 });
 
 experienceRed.addEventListener("click", () => {
-  console.log("experience red button clicked");
   if (experienceTab.style.display === "block")
     experienceTab.style.display = "none";
   experienceFolderClose.style.display = "block";
@@ -174,7 +168,6 @@ experienceRed.addEventListener("click", () => {
 });
 
 clientProjectsFolder.addEventListener("click", () => {
-  console.log("clientProjects folder clicked");
   if (clientProjectsTab.style.display === "none")
     clientProjectsTab.style.display = "block";
   clientProjectsFolderClose.style.display = "none";
@@ -182,7 +175,6 @@ clientProjectsFolder.addEventListener("click", () => {
 });
 
 clientProjectsRed.addEventListener("click", () => {
-  console.log("clientProjects red button clicked");
   if (clientProjectsTab.style.display === "block")
     clientProjectsTab.style.display = "none";
   clientProjectsFolderClose.style.display = "block";
@@ -190,7 +182,6 @@ clientProjectsRed.addEventListener("click", () => {
 });
 
 teamProjectsFolder.addEventListener("click", () => {
-  console.log("teamProjects folder clicked");
   if (teamProjectsTab.style.display === "none")
     teamProjectsTab.style.display = "block";
   teamProjectsFolderClose.style.display = "none";
@@ -198,7 +189,6 @@ teamProjectsFolder.addEventListener("click", () => {
 });
 
 teamProjectsRed.addEventListener("click", () => {
-  console.log("teamProjects red button clicked");
   if (teamProjectsTab.style.display === "block")
     teamProjectsTab.style.display = "none";
   teamProjectsFolderClose.style.display = "block";
@@ -206,7 +196,6 @@ teamProjectsRed.addEventListener("click", () => {
 });
 
 personalProjectsFolder.addEventListener("click", () => {
-  console.log("personalProjects folder clicked");
   if (personalProjectsTab.style.display === "none")
     personalProjectsTab.style.display = "block";
   personalProjectsFolderClose.style.display = "none";
@@ -214,7 +203,6 @@ personalProjectsFolder.addEventListener("click", () => {
 });
 
 personalProjectsRed.addEventListener("click", () => {
-  console.log("personalProjects red button clicked");
   if (personalProjectsTab.style.display === "block")
     personalProjectsTab.style.display = "none";
   personalProjectsFolderClose.style.display = "block";
@@ -222,37 +210,31 @@ personalProjectsRed.addEventListener("click", () => {
 });
 
 personalProjectApplesLink.addEventListener("click", () => {
-  console.log("personalProjectAppleLink folder clicked");
   if (personalProjectApplesTab.style.display === "none")
     personalProjectApplesTab.style.display = "block";
 });
 
 personalProjectApplesRed.addEventListener("click", () => {
-  console.log("personalProjects red button clicked");
   if (personalProjectApplesTab.style.display === "block")
     personalProjectApplesTab.style.display = "none";
 });
 
 clientProjectRe4wLink.addEventListener("click", () => {
-  console.log("personalProjectAppleLink folder clicked");
   if (clientProjectRe4wTab.style.display === "none")
     clientProjectRe4wTab.style.display = "block";
 });
 
 clientProjectRe4wRed.addEventListener("click", () => {
-  console.log("personalProjects red button clicked");
   if (clientProjectRe4wTab.style.display === "block")
     clientProjectRe4wTab.style.display = "none";
 });
 
 teamProjectRemindlyLink.addEventListener("click", () => {
-  console.log("personalProjectAppleLink folder clicked");
   if (teamProjectRemindlyTab.style.display === "none")
     teamProjectRemindlyTab.style.display = "block";
 });
 
 teamProjectRemindlyRed.addEventListener("click", () => {
-  console.log("personalProjects red button clicked");
   if (teamProjectRemindlyTab.style.display === "block")
     teamProjectRemindlyTab.style.display = "none";
 });

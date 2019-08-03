@@ -41,6 +41,10 @@ a {
   color: black;
 }
 
+h3 img {
+  margin-right: 0.2em;
+}
+
 .text-container {
   bottom: 0;
   padding: 15px;
@@ -215,7 +219,7 @@ a {
 
 .folder {
   margin: auto;
-  padding: 23px;
+  padding: 16px;
   width: 100px;
   cursor: pointer;
 }
@@ -545,6 +549,10 @@ textarea {
 /* --------------------------desktop styling-------------------------- */
 
 @media only screen and (min-width: 830px) {
+  .folder {
+    padding: 23px;
+  }
+
   .text-container {
     position: absolute;
     right: 0;
